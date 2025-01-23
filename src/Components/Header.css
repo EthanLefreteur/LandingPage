@@ -1,6 +1,8 @@
 .App-header {
     background-color: #14161b;
-    min-height: 5vh;
+    height: 15vh;
+    width: 100vw;
+    position: fixed;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -35,6 +37,9 @@
 
 .logoButton {
     background-color: #ffffff00;
+    margin-top: 50%;
+    margin-bottom: 50%;
+    margin-left: 1vw;
 }
 
 .logoButton:hover {

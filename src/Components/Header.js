@@ -27,7 +27,7 @@ export default function Header({
     return (
         <header className="App-header" id={div_id} >
             <div id="HeaderLeft">
-                <a onClick={logo.function} className="logoButton"> <img src={logo.src} id={logo.id} alt={logo.alt} /> </a>
+                <a onClick={logo.function} className="logoButton" href={"#" + logo.id}> <img src={logo.src} id={logo.id} alt={logo.alt} /> </a>
             </div>
             
             <div id="HeaderMiddle">
