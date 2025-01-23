@@ -1,0 +1,70 @@
+.App-header {
+    background-color: #14161b;
+    height: 15vh;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 1vmin);
+    color: white;
+}
+
+#HeaderLeft {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#HeaderRight {
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoButton > img {
+    height: 8vh;
+}
+
+.logoButton {
+    background-color: #ffffff00;
+    margin-top: 50%;
+    margin-bottom: 50%;
+    margin-left: 1vw;
+}
+
+.logoButton:hover {
+    cursor: pointer;
+}
+
+.headerButton {
+	background-color:#424242;
+	border-radius:28px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	padding:10px 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+	text-decoration:none;
+}
+.headerButton:hover {
+	background-color:#bfbfbf;
+}
+.headerButton:active {
+	position:relative;
+	top:1px;
+}
