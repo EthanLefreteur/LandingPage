@@ -12,8 +12,8 @@ function App() {
       <Header  logo = {{src: logo, id: "Logo", alt: "Website logo", function: () => {}}} buttons = {[]} />
 
       <div className="Main">
-        <TextImage text_information={{text: "Voici mon texte"}} image_information={{url: logo, image_position: ePosition.Left, id: "image1"}}/>
         <BlankDiv height={15} width={100}/>
+        <TextImage text_information={{text: "Ceci est un composant texte image !"}} image_information={{url: logo, image_position: ePosition.Left, id: "image1"}}/>
       </div>
 
     </div>
