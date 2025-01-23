@@ -25,7 +25,7 @@ export default function TextImage({
     return (
         <div
             id={div_id}
-            className={getClass(image_information.image_position)}
+            className={getClass(image_information.image_position) + " base-image-text"}
         >
             <img
                 src={image_information.url}
