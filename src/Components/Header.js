@@ -1,5 +1,5 @@
 import React from "react";
-import './TextImage.css';
+import './Header.css';
 
 function buildButtons(buttons) {
     let list = [];
@@ -10,6 +10,7 @@ function buildButtons(buttons) {
                 key={`button-${index}`}
                 type="button"
                 onClick={button.function}
+                className="headerButton"
             >
                 {button.text}
             </button>
@@ -19,13 +20,24 @@ function buildButtons(buttons) {
 }
 
 export default function Header({
-    logo_url = "",
-    buttons = [{ text: "Default Button", function: () => console.log("Test") }],
+    logo = {src: "/logo512.png", id: "Logo", alt: "Header image", function: () => {}},
+    buttons = [{ text: "Default Button", function: () => {} }],
     div_id = "",
 }) {
     return (
-        <header className="App-header">
-            {buildButtons(buttons)}
+        <header className="App-header" id={div_id} >
+            <div id="HeaderLeft">
+                <a onClick={logo.function} className="logoButton"> <img src={logo.src} id={logo.id} alt={logo.alt} /> </a>
+            </div>
+            
+            <div id="HeaderMiddle">
+                {buildButtons(buttons)}
+            </div>
+
+            <div id="HeaderRight">
+
+            </div>
+            
         </header>
     );
 }
