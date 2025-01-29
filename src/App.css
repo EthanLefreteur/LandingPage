@@ -24,9 +24,92 @@
 
 .Main {
   background-color: #282c34;
-  min-height: 100vh;
+  color: white;
+  min-height: 150vh;
 }
 
-#image1 {
-  height: 5vh;
+.base-paragraph {
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+
+#imageGameObject {
+  height: 15vh;
+
+  transition: transform .15s ;
+  transition-delay: .05s;
+  transition-timing-function: ease-in-out;
+
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(to left, darkblue, darkorchid) 1;
+}
+
+#imageGameObject:hover {
+  transform: scale(1.11);
+
+  transition: transform .15s ;
+  transition-delay: .05s;
+  transition-timing-function: ease-in-out;
+}
+
+#imageEngine {
+  height: 50vh;
+
+  transition: transform .15s ;
+  transition-delay: .05s;
+  transition-timing-function: ease-in-out;
+
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+}
+
+#imageEngine:hover {
+  transform: scale(1.11);
+
+  transition: transform .15s ;
+  transition-delay: .05s;
+  transition-timing-function: ease-in-out;
+}
+
+#imageImpact {
+  height: 40vh;
+
+  transition: transform .15s ;
+  transition-delay: .05s;
+  transition-timing-function: ease-in-out;
+
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+}
+
+#imageImpact:hover {
+  transform: scale(1.11);
+
+  transition: transform .15s ;
+  transition-delay: .05s;
+  transition-timing-function: ease-in-out;
+}
+
+#imageP2D {
+  height: 40vh;
+
+  transition: transform .15s ;
+  transition-delay: .05s;
+  transition-timing-function: ease-in-out;
+
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(to left, darkblue, darkorchid) 1;
+}
+
+#imageP2D:hover {
+  transform: scale(1.11);
+  
+  transition: transform .15s ;
+  transition-delay: .05s;
+  transition-timing-function: ease-in-out;
 }

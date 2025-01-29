@@ -20,14 +20,14 @@ function buildButtons(buttons) {
 }
 
 export default function Header({
-    logo = {src: "/logo512.png", id: "Logo", alt: "Header image", function: () => {}},
+    logo = {src: "/logo512.png", id: "Logo", href: null, alt: "Header image", function: () => {}},
     buttons = [{ text: "Default Button", function: () => {} }],
     div_id = "",
 }) {
     return (
         <header className="App-header" id={div_id} >
             <div id="HeaderLeft">
-                <a onClick={logo.function} className="logoButton" href={"#" + logo.id}> <img src={logo.src} id={logo.id} alt={logo.alt} /> </a>
+                <a onClick={logo.function} className="logoButton" href={logo.href}> <img src={logo.src} id={logo.id} alt={logo.alt} /> </a>
             </div>
             
             <div id="HeaderMiddle">

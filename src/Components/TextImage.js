@@ -8,10 +8,6 @@ function getClass(pos) {
             return "left-image"
         case ePosition.Right:
             return "right-image"
-        case ePosition.Down:
-            return "down-image"
-        case ePosition.Up:
-            return "up-image"
         default:
             return "left-image"
     }
