@@ -53,12 +53,12 @@ function App() {
         <ImageCarousel 
             blocks={
               [
-                {url: numworksImage, text: "Runs efficiently on the Numworks calculator with minimal memory overhead."},
-                {url: imgGameobject, text: "Flexible GameObject and Component system for easy development."},
-                {url: collision, text: "Simple box-based physics, including gravity, boundaries, and forces."},
-                {url: vector, text: "Uses custom libraries like Vector2 for easy game manipulation."},
-                {url: fakeGame, text: "Supports scalable game logic for puzzles, platformers, and more."},
-                {url: shadowLogo, text: "Made by Shadow Studio"},
+                {url: numworksImage, text: "Runs efficiently on the Numworks calculator with minimal memory overhead.", alt: "A numworks calculator"},
+                {url: imgGameobject, text: "Flexible GameObject and Component system for easy development.", alt: "A python class of the gameobject for Numity"},
+                {url: collision, text: "Simple box-based physics, including gravity, boundaries, and forces.", alt: "A representation of box collision for Numity"},
+                {url: vector, text: "Uses custom libraries like Vector2 for easy game manipulation.", alt: "A python class for vector calculation"},
+                {url: fakeGame, text: "Supports scalable game logic for puzzles, platformers, and more.", alt: "Image of a platformer 2D game, blurred, with the text 'UpComing platformer game' "},
+                {url: shadowLogo, text: "Made by Shadow Studio", alt: "Logo of Shadow studio, representing a black cat with the name of the studio"},
               ]
             }
         />
@@ -71,16 +71,16 @@ function App() {
 
         <h3> The Engine Main Loop </h3>
         <TextImage text_information={ {text: " The engine currently works on a simple, yet effective update loop, physics and camera update are both fixed on their corresponding target per seconds engine variable. "}} 
-          image_information={{url: engineLoop, image_position: ePosition.Right, id: "imageEngine"}}
+          image_information={{url: engineLoop, image_position: ePosition.Right, id: "imageEngine", alt: "Schema of the update loop of the Numity game engine"}}
         />
         
         <h3> Gameobject System </h3>
         <TextImage text_information={{text: " Each object holds its position and a list of components for modular design. "}} 
-          image_information={{url: imgGameobject, image_position: ePosition.Right, id: "imageGameObject"}}/>
+          image_information={{url: imgGameobject, image_position: ePosition.Right, id: "imageGameObject",alt: "Image of a python class of a gameobject"}}/>
         
         <h3> Physics System </h3>
         <TextImage text_information={ {text: " The Physics System only works using box collider for performance. It handles gravity, force, friction and collision using a custom Vector2 library ! "}} 
-          image_information={{url: frameImpact, image_position: ePosition.Left, id: "imageImpact"}}/>
+          image_information={{url: frameImpact, image_position: ePosition.Left, id: "imageImpact", alt: "Image representing a collision between 2 box in a 2D environnement"}}/>
         
         <h3> Rendering </h3>
         <p className='base-paragraph'>
@@ -94,7 +94,7 @@ function App() {
         <h3> P2D </h3>
         <TextImage text_information={
           {text: " P2D is an upcoming platform game, featuring complexe parkour, random in-game events and "}} 
-          image_information={{url: fakeGame, image_position: ePosition.Right, id: "imageP2D"}}/>
+          image_information={{url: fakeGame, image_position: ePosition.Right, id: "imageP2D", alt:"Image of a platformer 2D game, blurred, with the text 'UpComing platformer game' "}}/>
 
         <BlankDiv height={5} width={99} id={"blankdivBottom"}/>
 
